@@ -1,50 +1,33 @@
-# React + TypeScript + Vite
+# Aplicación de Gestión de Tareas y Metas Personales
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Esta aplicación permite a los usuarios organizar y gestionar sus tareas y metas personales. Proporciona herramientas visuales como un tablero Kanban y un calendario, además de generar estadísticas de productividad, facilitando el control del progreso en distintos proyectos. La aplicación está diseñada para ser intuitiva y fácil de usar, permitiendo a los usuarios establecer objetivos y planificar su tiempo de manera efectiva.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características Principales
 
-## Expanding the ESLint configuration
+- **Gestión de Tareas y Proyectos**
+  - Crear, editar y eliminar tareas con detalles como descripción, fecha de vencimiento y prioridad.
+  - Agrupar tareas en proyectos personales para organizar actividades por áreas.
+  - Visualizar tareas en un tablero Kanban para seguimiento rápido (pendiente, en progreso, completada).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Planificación de Metas y Objetivos**
+  - Definir metas a corto, mediano y largo plazo.
+  - Dividir metas en subtareas y etapas para facilitar el seguimiento.
 
-- Configure the top-level `parserOptions` property like this:
+- **Calendario de Actividades**
+  - Vista semanal y mensual de tareas para planificar y revisar fechas límite.
+  - Programar recordatorios y notificaciones.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Estadísticas de Productividad**
+  - Reportes de tareas completadas y visualización de gráficos de avance.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **Autenticación y Seguridad**
+  - Autenticación con JWT para proteger la privacidad y seguridad de los datos.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Instalación
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/tuusuario/gestion-tareas-metas.git
+   cd gestion-tareas-metas
