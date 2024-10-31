@@ -29,5 +29,7 @@ Esta aplicación permite a los usuarios organizar y gestionar sus tareas y metas
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/tuusuario/gestion-tareas-metas.git
-   cd gestion-tareas-metas
+   git clone https://github.com/DaniiCanlob/app-tareas-metas-personales.git
+   cd app-tareas-metas-personales
+   npm install
+   npm run dev
